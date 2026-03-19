@@ -19,12 +19,12 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
-          username: sochasse
-          server: 57.129.106.111
-          port: 2036
+          username: u75486763
+          server: home504343637.1and1-data.host
+          port: 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
           local_path: ./*
-          remote_path: /files
+          remote_path: /
 
           args: '-o ConnectTimeout=5'
